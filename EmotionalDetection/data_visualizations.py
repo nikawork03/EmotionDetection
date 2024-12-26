@@ -26,7 +26,7 @@ plt.title("Emotion Distribution")
 plt.xlabel("Emotion")
 plt.ylabel("Count")
 plt.savefig('visualizations/emotion_distribution.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # 2. Sentence length statistics
@@ -44,7 +44,7 @@ sns.violinplot(x='emotion', y='sentence_length', data=data, palette="Set3", inne
 sns.stripplot(x='emotion', y='sentence_length', data=data, color="black", alpha=0.5, jitter=True)
 plt.title("Sentence Length Distribution by Emotion")
 plt.savefig('visualizations/sentence_length_by_emotion_violin.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Word Count Distribution by Emotion
@@ -54,7 +54,7 @@ plt.title("Word Count Distribution by Emotion")
 plt.xlabel("Word Count")
 plt.ylabel("Frequency")
 plt.savefig('visualizations/word_count_distribution.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Enhanced Heatmap for Correlation
@@ -63,7 +63,7 @@ correlation = data[['sentence_length', 'word_count']].corr()
 sns.heatmap(correlation, annot=True, cmap="coolwarm", cbar=True)
 plt.title("Feature Correlation Heatmap")
 plt.savefig('visualizations/feature_correlation_heatmap.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Scatterplot of Sentence Length vs. Word Count
@@ -73,7 +73,7 @@ plt.title("Sentence Length vs. Word Count")
 plt.xlabel("Word Count")
 plt.ylabel("Sentence Length")
 plt.savefig('visualizations/sentence_length_vs_word_count.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # 3. Word Clouds for Positive and Negative Emotions
@@ -89,7 +89,7 @@ plt.imshow(positive_wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.title("Word Cloud for Positive Emotions")
 plt.savefig('visualizations/positive_emotion_wordcloud.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Negative Emotion Word Cloud
@@ -98,7 +98,7 @@ plt.imshow(negative_wordcloud, interpolation='bilinear')
 plt.axis('off')
 plt.title("Word Cloud for Negative Emotions")
 plt.savefig('visualizations/negative_emotion_wordcloud.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Top Words Visualization for Positive and Negative Emotions
@@ -115,7 +115,7 @@ plt.title("Top Words in Positive Sentences")
 plt.xlabel("Frequency")
 plt.ylabel("Word")
 plt.savefig('visualizations/top_positive_words.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 # Negative Words Bar Plot
@@ -125,7 +125,7 @@ plt.title("Top Words in Negative Sentences")
 plt.xlabel("Frequency")
 plt.ylabel("Word")
 plt.savefig('visualizations/top_negative_words.png')
-plt.show()  # Display the plot
+plt.show()
 plt.close()
 
 print("Visualizations generated and saved to the 'visualizations' directory.")
