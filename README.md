@@ -89,34 +89,8 @@ Heatmaps of confusion matrices for both models.
 
 A bar chart comparing the accuracy of Naive Bayes and SVM.
 
-Improvements and Suggestions
+___________________________________________________________________________________________________________________
+way to acquire data:
+1. view import_data.py
+2. visit website: https://www.kaggle.com/datasets/kushagra3204/sentiment-and-emotion-analysis-dataset
 
-Additional Features:
-
-Incorporate bigrams or trigrams into the TF-IDF vectorizer.
-
-Experiment with other models like Random Forest or Gradient Boosting.
-
-Hyperparameter Tuning:
-
-Optimize parameters for both Naive Bayes and SVM for better performance.
-
-Error Analysis:
-
-Perform in-depth analysis of incorrect predictions to identify patterns.
-
-Data Augmentation:
-
-Expand the dataset with synonyms or paraphrased sentences for better generalization.
-
-Visualization:
-
-Add sentiment distributions or word clouds to explore frequent terms for each emotion.
-
-Results
-
-Naive Bayes achieved an accuracy of X%.
-
-SVM achieved an accuracy of Y%.
-
-Based on the results, [model choice] performed better for this dataset.
